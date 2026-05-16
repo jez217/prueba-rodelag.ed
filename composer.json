@@ -1,0 +1,31 @@
+{
+  "name": "fintech/php-orchestrator",
+  "description": "PHP orchestration layer — Module 2.2",
+  "type": "project",
+  "require": {
+    "php": ">=8.2",
+    "slim/slim": "^4.14",
+    "slim/psr7": "^1.7",
+    "php-di/php-di": "^7.0",
+    "firebase/php-jwt": "^6.10",
+    "guzzlehttp/guzzle": "^7.9",
+    "vlucas/phpdotenv": "^5.6",
+    "monolog/monolog": "^3.7"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true
+  }
+}
